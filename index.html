@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Summary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <article class="card">
+      <div class="hero"></div>
+
+      <section class="content">
+        <h1>Order Summary</h1>
+
+        <p class="description">
+          You can now listen to millions of songs, audiobooks, and podcasts
+          on any device anywhere you like!
+        </p>
+
+        <div class="plan-box">
+          <div class="plan-left">
+            <div class="icon">🎵</div>
+            <div>
+              <h2>Annual Plan</h2>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+          <a href="#" id="changeLink">Change</a>
+        </div>
+
+        <button id="payBtn">Proceed to Payment</button>
+        <button id="cancelBtn" class="cancel">Cancel Order</button>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    document.getElementById('payBtn').addEventListener('click', () => {
+      alert('Payment flow would start here.');
+    });
+
+    document.getElementById('cancelBtn').addEventListener('click', () => {
+      alert('Order cancelled.');
+    });
+
+    document.getElementById('changeLink').addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('Plan change screen would open here.');
+    });
+  </script>
+</body>
+</html>
